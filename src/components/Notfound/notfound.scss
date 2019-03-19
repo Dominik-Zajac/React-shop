@@ -1,0 +1,19 @@
+.error-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	.first-paragraph,
+	.second-paragraph {
+		text-transform: uppercase;
+	}
+	.first-paragraph {
+		color: #333;
+		font-size: 3rem;
+	}
+
+	.second-paragraph {
+		color: #555454;
+		font-size: 2rem;
+	}
+}

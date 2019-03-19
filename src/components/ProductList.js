@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router';
 import ProductImage from './ProductImage';
 
 const ProductList = props => (
@@ -7,9 +7,9 @@ const ProductList = props => (
 		{ props.products.map(product => {
 			return (
 				<div className='' key={ product.id }>
-					<NavLink className='navbar-brand' exact to={'products/product/' + product.id }>
+					<Link className='navbar-brand' to={'products/product/' + product.id }>
 						<ProductImage product={ product }/>
-					</NavLink>
+					</Link>
 				</div>
 			)
 		})}

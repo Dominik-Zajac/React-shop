@@ -1,0 +1,28 @@
+.navbar {
+	
+	.navbar-collapse {
+		display: flex;
+		justify-content: flex-end;
+		
+		.nav-link {
+			margin: 15px;
+			font-family: 'Myriad Pro';
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 6.4px;
+			.active {
+				opacity: 1;
+			}
+			a {
+				outline: none;
+				opacity: 0.5;
+				color: #000;
+
+				&:hover {
+					opacity: 1;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
