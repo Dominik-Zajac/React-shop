@@ -1,0 +1,55 @@
+[{
+  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "producent" : "dewalt",
+  "model": "dcd710",
+  "condition": "nowy",
+  "napiecie": "10.8V",
+  "cena": "1$",
+  "imageUrl": "http://sklep.narzedzia-olkusz.pl/2341-tm_thickbox_default/wiertarko-wkretarka-akumulatorowa-xr-108v-213ah-li.jpg",
+  "id": 1
+}, {
+  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "producent" : "bosch",
+  "model": "GSR18-Li",
+  "condition": "nowy",
+  "napiecie": "18V",
+  "cena": "1$",
+  "imageUrl": "http://sklep.narzedzia-olkusz.pl/4835-tm_thickbox_default/wiertarko-wkretarka-akumulatorowa-gsr-180-li-215ah.jpg",
+  "id": 2
+}, {
+  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "producent" : "makita",
+  "model": "DDF458",
+  "condition": "nowy",
+  "napiecie": "18V",
+  "cena": "1$",
+  "imageUrl": "http://sklep.narzedzia-olkusz.pl/5150-tm_thickbox_default/wiertarko-wkretarka-akumulatorowa-18v-250ah-li-lon-makpac.jpg",
+  "id": 3
+}, {
+  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "producent" : "makita",
+  "model": "DDF458",
+  "condition": "nowy",
+  "napiecie": "18V",
+  "cena": "1$",
+  "imageUrl": "http://sklep.narzedzia-olkusz.pl/5150-tm_thickbox_default/wiertarko-wkretarka-akumulatorowa-18v-250ah-li-lon-makpac.jpg",
+  "id": 4
+}, {
+  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "producent" : "makita",
+  "model": "DDF458",
+  "condition": "nowy",
+  "napiecie": "18V",
+  "cena": "1$",
+  "imageUrl": "http://sklep.narzedzia-olkusz.pl/5150-tm_thickbox_default/wiertarko-wkretarka-akumulatorowa-18v-250ah-li-lon-makpac.jpg",
+  "id": 5
+}, {
+  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "producent" : "makita",
+  "model": "DDF458",
+  "condition": "nowy",
+  "napiecie": "18V",
+  "cena": "1$",
+  "imageUrl": "http://sklep.narzedzia-olkusz.pl/5150-tm_thickbox_default/wiertarko-wkretarka-akumulatorowa-18v-250ah-li-lon-makpac.jpg",
+  "id": 6
+}]
