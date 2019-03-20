@@ -17,7 +17,7 @@ const productsReducer = function (state = initialState, action) {
 			return Object.assign({}, state, { selectedProduct });
 			
 		case SEARCH_PRODUCTS:
-			const foundProducts = state.products.filter(country => country.name.toLowerCase().includes(action.searchText.toLowerCase()));
+			const foundProducts = state.products.filter(product => product.search.toLowerCase().includes(action.searchText.toLowerCase()));
 			return Object.assign({}, state, { visibleProducts: foundProducts });
 	}
 
