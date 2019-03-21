@@ -1,5 +1,16 @@
 .navbar {
-	
+	background-color: #2f3542;
+
+	.navbar-brand {
+		outline: none;
+		color: #ffa502;
+		font-family: 'Myriad Pro';
+		font-weight: 500;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+
+	}
 	.navbar-collapse {
 		display: flex;
 		justify-content: flex-end;
@@ -10,18 +21,26 @@
 			font-weight: 400;
 			text-transform: uppercase;
 			letter-spacing: 6.4px;
+			
 			.active {
 				opacity: 1;
+				color: #ffa502;
 			}
+
 			a {
 				outline: none;
 				opacity: 0.5;
-				color: #000;
+				color: #fff;
 
 				&:hover {
 					opacity: 1;
+					color: #ffa502;
 					text-decoration: none;
 				}
+			}
+
+			.fas {
+				font-size: 25px;
 			}
 		}
 	}

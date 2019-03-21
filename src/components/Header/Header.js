@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Footer from '../Footer/Footer';
 
 /* Styles */
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,7 +34,7 @@ export const Header = props => {
 								Kontakt
 							</Link></li>
 							<li className='nav-link'><Link to='/koszyk' activeClassName='active'>
-								Koszyk
+								<i className="fas fa-shopping-basket"></i>
 							</Link></li>
 						</ul>
 					</div>
@@ -41,6 +42,9 @@ export const Header = props => {
 			</nav>
 			<div className='container-fluid'>
 				{ props.children }
+			</div>
+			<div>
+				<Footer />
 			</div>
 		</div>
 	);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import Header from './components/Header/Header'
-import { Home } from './components/Home/Home';
+import Home from './components/Home/Home';
 import { Faq } from './components/Faq/Faq';
 import { Regulamin } from './components/Regulamin/Regulamin';
 import { Kontakt } from './components/Kontakt/Kontakt';

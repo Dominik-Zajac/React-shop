@@ -1,0 +1,24 @@
+.container-fluid {
+	display: flex;
+	justify-content: center;
+
+	.slide {
+		border: 1px solid red;
+		max-width: 50%;
+
+		img {
+		min-height: 400px;
+		max-height: 400px;
+		max-width: 800px;
+		min-width: 800px;
+		}
+	}
+	
+	ol .active {
+		border: 2px solid #ffa502;
+	}
+
+	.carousel-control-next, .carousel-control-prev {
+		cursor: pointer;
+	}
+}
