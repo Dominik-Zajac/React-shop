@@ -1,7 +1,7 @@
 export const GET_PRODUCTS = 'GET_PRODUCTS';
 export const GET_PRODUCT = 'GET_PRODUCT';
 export const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
-export const SET_MARK = 'SET_MARK'
+export const SORT_PRODUCTS = 'SORT_PRODUCTS';
 
 export function getProducts() {
 	return {
@@ -23,9 +23,9 @@ export function searchProducts(searchText) {
 	}
 }
 
-export function setMark(name) {
+export function sortProducts(name) {
 	return {
-		type: SET_MARK,
+		type: SORT_PRODUCTS,
 		name
 	}
 }

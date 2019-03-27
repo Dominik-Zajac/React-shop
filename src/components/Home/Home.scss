@@ -1,24 +1,145 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .title {
+        margin: 6vh 0;
+
+        font-size: 3.5rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+        color: #6c707a;
+    }
+
+    .subtitle {
+        text-transform: uppercase;
+        color: #ffa502;
+        text-shadow: 0 0 0.2vh #ffb682;
+    }
+}
+
+/* Carousel */
 .container-fluid {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 
-	.slide {
-		border: 1px solid red;
-		max-width: 50%;
+    .slide {
 
-		img {
-		min-height: 400px;
-		max-height: 400px;
-		max-width: 800px;
-		min-width: 800px;
-		}
-	}
-	
-	ol .active {
-		border: 2px solid #ffa502;
-	}
+        img {
+            min-width: 800px;
+            max-height: 400px;
+        }
+    }
+    
+    ol li {
+        width: 20px;
+        height: 20px;
 
-	.carousel-control-next, .carousel-control-prev {
-		cursor: pointer;
-	}
+        margin: 0 10px;
+        
+        opacity: 0.8;
+        border-radius: 50%;
+        border: 2px solid #2f3542;
+
+    }
+
+    ol .active {
+        background-color: #ffa502;
+    }
+
+    .carousel-control-next, .carousel-control-prev, ol li {
+        cursor: pointer;
+    }
+}
+
+/* About Us */
+.container {
+    margin-top: 10vh;
+
+    .info-title {
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        
+        color: #ffa502;
+        text-shadow: 0 0 0.5vh #ffb682;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .icon, h2, p {
+            color: #2f3542;
+            margin-top: 2vh;
+        }
+
+        .icon {
+            font-size: 4rem;
+            opacity: 0.7;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        p {
+            max-width: 60%;
+            min-height: 150px;
+            
+            margin-top: 2vh;
+            
+            font-weight: 300;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+    }
+}
+
+/* Media */
+@media (max-width: 960px) {
+    
+    .home-container {
+
+        .title, .subtitle {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+    
+    /* Carousel */
+    .container-fluid {
+        .slide {
+
+            img {
+                min-width: 80vw;
+                max-width: 80vw;
+                min-height: 35vh;
+                max-height: 35vh;
+            }
+        }
+    }
+
+    /* About Us */
+    .container {
+        margin-top: 5vh;
+
+        .info-title {
+            font-size: 2rem;
+        }
+
+        .offer {
+
+            p {
+                min-height: 70px;
+            }
+
+        }
+    }
 }

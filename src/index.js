@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from './store/index';
 import routes from './routes';
 
+import './index.scss'
 
 render (
 	<Provider store={ store }>

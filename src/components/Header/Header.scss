@@ -1,47 +1,72 @@
 .navbar {
-	background-color: #2f3542;
+    background-color: #2f3542;
 
-	.navbar-brand {
-		outline: none;
-		color: #ffa502;
-		font-family: 'Myriad Pro';
-		font-weight: 500;
-		font-size: 24px;
-		text-transform: uppercase;
-		letter-spacing: 3px;
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        outline: none;
+        color: #ffa502;
+    }
 
-	}
-	.navbar-collapse {
-		display: flex;
-		justify-content: flex-end;
-		
-		.nav-link {
-			margin: 15px;
-			font-family: 'Myriad Pro';
-			font-weight: 400;
-			text-transform: uppercase;
-			letter-spacing: 6.4px;
-			
-			.active {
-				opacity: 1;
-				color: #ffa502;
-			}
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+        
+        .nav-link {
+            margin: 15px;
+            
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 6.4px;
+            
+            .active {
+                opacity: 1;
+                color: #ffa502;
+            }
 
-			a {
-				outline: none;
-				opacity: 0.5;
-				color: #fff;
+            a {
+                outline: none;
+                opacity: 0.5;
+                color: #fff;
 
-				&:hover {
-					opacity: 1;
-					color: #ffa502;
-					text-decoration: none;
-				}
-			}
+                &:hover {
+                    opacity: 1;
+                    color: #ffa502;
+                    text-decoration: none;
+                }
+            }
 
-			.fas {
-				font-size: 25px;
-			}
-		}
-	}
+            .fas {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+/* Media */
+@media (max-width: 960px) {
+    .navbar {
+        text-align: center;
+        
+        .container-fluid {
+            justify-content: center;
+                
+            .navbar-brand {
+                justify-content: center;
+                margin: 0;
+            }
+            
+            .navbar-nav {
+                margin-top: 15px;
+            }
+            
+            .nav-link {
+                min-width: 100vw;
+                padding: 5px;
+                font-size: 1.3rem;
+            }
+        }
+    }
 }

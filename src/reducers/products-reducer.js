@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, GET_PRODUCT, SEARCH_PRODUCTS } from '../actions/actions-products';
+import { GET_PRODUCTS, GET_PRODUCT, SEARCH_PRODUCTS, SORT_PRODUCTS } from '../actions/actions-products';
 import productsData from '../data/products.json';
 
 const initialState = {
@@ -19,6 +19,17 @@ const productsReducer = function (state = initialState, action) {
 		case SEARCH_PRODUCTS:
 			const foundProducts = state.products.filter(product => product.search.toLowerCase().includes(action.searchText.toLowerCase()));
 			return Object.assign({}, state, { visibleProducts: foundProducts });
+		
+		case SORT_PRODUCTS:
+			const classification = (x, y) => {
+				if (x.name > y.name) return -1;
+				if(x.name < y.name) return 1;
+				return 0
+			};
+
+			const sortProducts = state.products.sort(classification);
+
+			return Object.assign({}, state, { visibleProducts:  sortProducts});
 	}
 
 	return state;

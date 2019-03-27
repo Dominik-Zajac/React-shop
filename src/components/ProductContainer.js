@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ProductList from './ProductList';
-import { getProducts, searchProducts } from '../actions/actions-products';
+import { getProducts, searchProducts, sortProducts } from '../actions/actions-products';
 
 class ProductContainer extends Component {
 	constructor(props) {
@@ -17,10 +17,18 @@ class ProductContainer extends Component {
 		this.props.dispatch(searchProducts(e.target.value));
 	}
 
+	sort(e) {
+		this.props.dispatch(sortProducts(e.target.name));
+	}
+
 	render() {
 		return (
 			<div>
 				<div className='search text-center'>
+					<button onClick={ this.sort.bind(this)}>Sort A-Z</button>
+					<button onClick={ this.sort.bind(this)}>Sort Z-A</button>
+					<button onClick={ this.sort.bind(this)}>Cena malejaco</button>
+					<button onClick={ this.sort.bind(this)}>Cena rosnaco</button>
 					<input type='text' onChange={ this.search.bind(this) }/>
 				</div>
 				<ProductList products={ this.props.visibleProducts } />
@@ -32,7 +40,7 @@ class ProductContainer extends Component {
 const mapStateToProps = function(store) {
 	return {
 		products: store.productsReducer.products,
-		visibleProducts: store.productsReducer.visibleProducts
+		visibleProducts: store.productsReducer.visibleProducts,
 	};
 };
 

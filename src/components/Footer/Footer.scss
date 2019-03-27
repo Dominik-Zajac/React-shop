@@ -1,24 +1,25 @@
-.footer-container {
-	min-height: 100px;
-	
-	padding: 10px 0;
-	
-	text-align: center;
-	font-family: 'Myriad Pro';
-	background-color: #2f3542;
+footer {
+    .footer-container {
+        min-height: 100px;
+        
+        padding: 10px 0;
+        
+        text-align: center;
+        background-color: #2f3542;
 
-	.footer-title {
-		font-weight: 500;
-		font-size: 2rem;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		color: #ffa502;
-	}
+        .footer-title {
+            font-weight: 500;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffa502;
+        }
 
-	.footer-paragraph {
-		margin-top: -10px;
-		
-		color: #fff;
-		opacity: 0.5;
-	}
+        .footer-paragraph {
+            margin-top: -10px;
+            
+            color: #fff;
+            opacity: 0.5;
+        }
+    }
 }
