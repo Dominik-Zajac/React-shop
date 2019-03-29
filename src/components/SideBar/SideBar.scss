@@ -1,0 +1,53 @@
+.sidebar-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    min-width: 15vw;
+    
+    color: #2f3542;
+
+    .sort-title {
+        opacity: 0.9;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .sort-click {
+        padding: 2% 0;
+        
+        font-size: 1.2rem;
+        
+        opacity: 0.8;
+        cursor: pointer;
+        
+        &:hover {
+            color: #ffa502;
+        }
+    }
+    
+    .line {
+        min-width: 10vw;
+        height: 2px;
+
+        margin: 3% 0;
+
+        background-color: #ffa502;
+    }
+    
+    input {
+        max-width: 80vw;
+
+        margin: 2% 0;
+        padding: 8px 15px;
+        
+        border: 2px solid #dfe4ea;
+        border-radius: 3px;
+        background-color: #fff;
+
+        &:focus {
+            opacity: 0.7;
+            border-color: #2f3542;
+        }
+    }
+}

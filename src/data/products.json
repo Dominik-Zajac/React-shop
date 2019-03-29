@@ -1,5 +1,5 @@
 [{
-  "name": "Wiertarko-Wkretarka Akumulatorowa",
+  "name": "Wiertarko-Wkretarka",
   "producent" : "DEWALT",
   "model": "DCD710",
   "condition": "nowy",
@@ -10,7 +10,7 @@
   "imageUrl": "https://i.ibb.co/L0npDCy/wkretarka-dewalt-min.png",
   "id": 1
 }, {
-  "name": "Wiertarko-Wkretarka Akumulatorowa",
+  "name": "Wiertarko-Wkretarka",
   "producent" : "BOSCH",
   "model": "GSR18-2-Li",
   "condition": "nowy",
@@ -21,13 +21,13 @@
   "imageUrl": "https://i.ibb.co/ZhSY6V4/wkretarka-bosch-min.png",
   "id": 2
 }, {
-  "name": "Wiertarko-Wkretarka-Akumulatorowa",
+  "name": "Wiertarko-Wkretarka",
   "producent" : "MAKITA",
   "model": "DHP484RMJ",
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 511,40 zl",
+  "price": "1511,40 zl",
   "search": "Wiertarko-Wkretarka-Akumulatorowa MAKITA",
   "imageUrl": "https://i.ibb.co/ssnV1CC/wkretarka-makita-min.png",
   "id": 3
@@ -131,35 +131,35 @@
   "imageUrl": "https://i.ibb.co/P9tpFHV/szlifierka-makita-230-min.png",
   "id": 12
 }, {
-  "name": "Mlot",
+  "name": "Mlot wyburzeniowy",
   "producent" : "DEWALT",
   "model": "D25960K",
   "condition": "nowy",
   "voltage": "230V",
   "power": "1600W",
-  "price": "4 919,00 zl",
+  "price": "4919,00 zl",
   "search": "Mlot DEWALT",
   "imageUrl": "https://i.ibb.co/GP3ydMJ/Mlot-dewalt-min.png",
   "id": 13
 }, {
-  "name": "Mlot",
+  "name": "Mlot wyburzeniowy",
   "producent" : "BOSCH",
   "model": "GSH 27 VC",
   "condition": "nowy",
   "voltage": "230V",
   "power": "2000W",
-  "price": "5 979,00 zl",
+  "price": "5979,00 zl",
   "search": "Mlot BOSCH",
   "imageUrl": "https://i.ibb.co/yh8Pk4K/mlot-min.png",
   "id": 14
 }, {
-  "name": "Mlot",
+  "name": "Mlot wyburzeniowy",
   "producent" : "MAKITA",
   "model": "HM1812",
   "condition": "nowy",
   "voltage": "230V",
   "power": "2000W",
-  "price": "6 981,00 zl",
+  "price": "6981,00 zl",
   "search": "Mlot MAKITA",
   "imageUrl": "https://i.ibb.co/yBqM7qY/Mlot-makita-min.png",
   "id": 15
@@ -170,7 +170,7 @@
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 039,00 zl",
+  "price": "1039,00 zl",
   "search": "Wyrzynarka DEWALT",
   "imageUrl": "https://i.ibb.co/m4xTzgM/wyrzynarka-dewalt-min.png",
   "id": 16
@@ -181,7 +181,7 @@
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 549,00 zl",
+  "price": "1549,00 zl",
   "search": "Wyrzynarka BOSCH",
   "imageUrl": "https://i.ibb.co/kxrQS3P/wyrzynarka-bosch-min.png",
   "id": 17
@@ -192,7 +192,7 @@
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 399,99 zl",
+  "price": "1399,99 zl",
   "search": "Wyrzynarka MAKITA",
   "imageUrl": "https://i.ibb.co/M27MjTD/wyrzynarka-makita-min.png",
   "id": 18
@@ -203,7 +203,7 @@
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 119,00 zl",
+  "price": "1119,00 zl",
   "search": "Pilarka tarczowa DEWALT",
   "imageUrl": "https://i.ibb.co/yYYTvcH/pilarka-dewalt-min.png",
   "id": 19
@@ -214,7 +214,7 @@
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 029,99 zl",
+  "price": "1029,99 zl",
   "search": "Pilarka tarczowa BOSCH",
   "imageUrl": "https://i.ibb.co/4V48z5Z/pilarka-bosch-min.png",
   "id": 20
@@ -225,7 +225,7 @@
   "condition": "nowy",
   "voltage": "18V",
   "power": "-",
-  "price": "1 199,99 zl",
+  "price": "1199,99 zl",
   "search": "Pilarka tarczowa MAKITA",
   "imageUrl": "https://i.ibb.co/2s1NG0p/pilarka-makita-min.png",
   "id": 21

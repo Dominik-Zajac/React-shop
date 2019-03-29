@@ -1,0 +1,18 @@
+.products-wrapper {
+    display: flex;
+    justify-content: flex-start;
+
+    max-width: 80%;
+    min-width: 80%;
+
+    margin: 2% 0;
+}
+
+/* Media */
+@media (max-width: 960px) {
+
+    .products-wrapper {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}

@@ -8,9 +8,9 @@ import routes from './routes';
 import './index.scss'
 
 render (
-	<Provider store={ store }>
-		<Router history={ hashHistory } routes={ routes } />		
-	</Provider>,
-	document.getElementById('root')
+    <Provider store={ store }>
+        <Router history={ hashHistory } routes={ routes } />        
+    </Provider>,
+    document.getElementById('root')
 );
 

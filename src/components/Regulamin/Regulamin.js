@@ -71,5 +71,5 @@ export const Regulamin = () => {
             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
             </p>
         </div>
-    );
+    )
 };
