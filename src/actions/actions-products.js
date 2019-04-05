@@ -24,23 +24,23 @@ export function searchProducts(searchText) {
     }
 }
 
-export const sortByName = (key, direct) => {
-  return {
-    type: SORT_BY_NAME,
-    key,
-    direct
-  }
+export function sortByName(key, direct) {
+    return {
+        type: SORT_BY_NAME,
+        key,
+        direct
+    }
 }
 
-export const sortByPrice = (key, direct) => {
-  return {
-    type: SORT_BY_PRICE,
-    key,
-    direct
-  }
+export function sortByPrice(key, direct) {
+    return {
+        type: SORT_BY_PRICE,
+        key,
+        direct
+    }
 }
 
-export const sortProducts = (key, direct) => {
+export function sortProducts(key, direct) {
     if(key === 'price') {
         return sortByPrice(key, direct);
     }

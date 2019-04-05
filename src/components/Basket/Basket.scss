@@ -1,0 +1,162 @@
+.basket-container {
+	margin: 2% 0;
+	
+	.title {
+	}
+
+	.box-products {
+    	display: flex;
+    	justify-content: space-around;
+    	
+    	// max-width: 50vw;
+    	max-height: 20vh;
+    	min-height: 15vh;
+    	min-width: 60vw;
+		
+		margin: 1% 0;
+		
+		padding: 2%;
+    	border: 1px solid #dfe4ea;
+    	background-color: #fff;
+
+        .product-photo {
+        	max-width: 13vh;
+        	max-height: 13vh;
+        	min-width: 13vh;
+        	min-height:13vh;
+        	padding: 10px;
+    	}
+		
+		.product-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			max-width: 15vw;
+
+			.title-product {
+				font-size: 2rem;
+				color: #2f3542;
+				
+			}
+
+			p {
+            	color: #6c707a;
+
+			}
+		}
+		
+		.product-price {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;	
+			
+			.sum-price {
+				margin: 10px 0 0 0;
+				line-height: 30px;
+				font-size: 1.8rem;
+				letter-spacing: 1px;
+				color: #2f3542;
+
+				span {
+					font-size: 1.2rem;
+				}
+			}
+
+			.price {
+            	color: #6c707a;
+			}
+		}
+
+		.product-functions {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			.volum {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				button {
+					width: 40px;
+					height: 40px;	
+					margin: 10px;				
+					font-size: 1.5rem;
+					border: 1px solid #6c707a;
+					outline: none;
+					background-color: inherit;
+					cursor: pointer;
+				}
+
+				.disableBtn {
+					opacity: 0.5;
+				}
+
+				.enableBtn {
+					opacity: 1;
+				}
+
+				.sum-counter {
+					width: 40px;
+					height: 40px;
+
+					font-size: 1.5rem;
+					text-align: center;
+				}
+			
+			.icon {
+				max-width: 30px;
+				margin-left: 20px;
+				cursor: pointer;
+				font-size: 1.5rem;
+
+				&:hover {
+					color: #eb2f06;
+				}
+			}
+			}
+
+		}
+	}
+
+	.basket-functions {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 5%;
+		
+		input{
+			padding: 5px 10px;
+			border-radius: 3px;
+            	border: 1px solid #dfe4ea;
+            	background-color: #fff;
+		}
+
+		.sum-price {
+			font-size: 1.5rem;
+		}
+
+		.btn-pay {
+			width: 150px;
+            height: 40px;
+                
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+             
+            cursor: pointer;
+            background-color: #ffa502;
+            border: 3px solid #ffa502;
+            border-radius: 3px;
+                
+            &:hover {
+                opacity: 0.8;
+            }
+        
+		}
+	}
+}

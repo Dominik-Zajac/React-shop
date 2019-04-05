@@ -1,17 +1,17 @@
 import React from 'react';
+import Paragraph from './FooterParagraph';
+import Links from './FooterLink';
 
 /* Styles */
 import './Footer.scss';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer>
-            <div className='footer-container'>
-                <p className='footer-title'>Narzedzia</p>
-                <p className='footer-paragraph'>Copyright © 2019 Narzedzia</p>
-            </div>
+            <Paragraph />
+            <Links />
         </footer>
-    );
-};
+    )
+}
 
 export default Footer;

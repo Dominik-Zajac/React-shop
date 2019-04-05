@@ -1,0 +1,20 @@
+@mixin text($font-size, $font-weight, $text-transform) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+ 	text-transform: $text-transform;
+}
+
+@mixin width($min-width, $max-width) {
+	min-width: $min-width;
+	max-width: $max-width;
+}
+
+@mixin height($min-height, $max-height) {
+	min-height: $min-height;
+	max-height: $max-height;
+}
+
+@mixin spacing($margin, $padding) {
+	margin: $margin;
+	padding: $padding;
+}

@@ -1,14 +1,14 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
 .contact-container {
+    @include width(55vw, 50vw);
+    @include spacing(8%, 2% auto);
+
     display: flex;
     justify-content: center;
-
-    min-width: 55vw;
-    min-height: 50vh;
     
-    margin: 8%;
-    padding: 2% auto;
-    
-    background-color: #fff;
+    background-color: $box-background;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 #e2e2e2;
     
@@ -36,7 +36,7 @@
             margin: 0 0 20% 0;
 
             border: none;
-            background-color: #ffa502;
+            background-color: $additional-color;
         }
 
         .contact-paragraph {
@@ -71,7 +71,5 @@
                 max-width: 60vw;
             }
         }
-
     }
-
 }

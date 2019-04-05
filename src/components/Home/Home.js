@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
     Container,
+    CarouselItem,
 } from 'reactstrap';
+import Title from './Title';
+import Info from './ShopInfo';
+import CarouselContainer from './CarouselContainer';
 
 /* Styles */
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -38,7 +38,7 @@ class Home extends Component {
         this.goToIndex = this.goToIndex.bind(this);
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
-      }
+    }
 
     onExiting() {
         this.animating = true;
@@ -75,56 +75,51 @@ class Home extends Component {
     }
 
     render() {
-        const { activeIndex } = this.state;
-
+        const {activeIndex} = this.state;
+        const {
+            next, 
+            previous, 
+            goToIndex, 
+            onExited, 
+            onExiting
+        } = this;
         const slides = items.map((item) => {
+            const {
+                src, 
+                altText
+            } = item;
+            
             return (
                 <CarouselItem
-                    onExiting={ this.onExiting }
-                    onExited={ this.onExited }
-                    key={ item.src } 
+                    key={src} 
+                    onExiting={onExiting}
+                    onExited={onExited}
                 >
-                    <img src={ item.src } alt={ item.altText } />
+                    <img 
+                        src={src} 
+                        alt={altText}
+                    />
                 </CarouselItem>
-            );
-        });
+            )
+        })
 
         return (
             <div className='home-container'>
-                <h1 className='title'>Sklep <span className='subtitle'>Narzedzia</span></h1>
-                <Carousel
-                    activeIndex={ activeIndex }
-                    next={ this.next }
-                    previous={ this.previous }
-                >   
-                    <CarouselIndicators items={ items } activeIndex={ activeIndex } onClickHandler={ this.goToIndex } />
-                    {slides}
-                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={ this.previous } />
-                    <CarouselControl direction="next" directionText="Next" onClickHandler={ this.next } />
-                </Carousel>
-                <div className='container'>
-                    <h1 className='info-title'>O nas</h1>
-                    <div className='row'>
-                        <div className='offer col-sm-12 col-lg-4'>
-                            <i className='icon far fa-thumbs-up'></i>
-                            <h2>Sprawdzony sklep</h2>
-                            <p>Sklep otrzymuje swietne opinie i recenzje.</p>
-                        </div>
-                        <div className='offer col-sm-12 col-lg-4'>
-                            <i className='icon far fa-heart'></i>
-                            <h2>Najlepsza jakość</h2>
-                            <p>Posiadamy markowe sprzety swietnej jakosci.</p>
-                        </div>
-                        <div className='offer col-sm-12 col-lg-4'>
-                            <i className='icon fas fa-map-marked-alt'></i>
-                            <h2>Dobra lokalizacja</h2>
-                            <p>Sklep zlokalizowany w centrum miasta.</p>
-                        </div>
-                    </div>
-                </div>
+                <Title />
+                <CarouselContainer 
+                    next={next}
+                    items={items} 
+                    slides={slides}
+                    previous={previous}
+                    activeIndex={activeIndex} 
+                    clickHandlerIndex={goToIndex}
+                    clickHandlerNext={next} 
+                    clickHandlerPrevious={previous} 
+                />               
+                <Info />
             </div>
         )
     }
-};
+}
 
 export default Home;

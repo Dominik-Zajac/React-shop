@@ -8,6 +8,8 @@
   "price": "439,00 zl",
   "search": "Wiertarko-Wkretarka-Akumulatorowa DEWALT",
   "imageUrl": "https://i.ibb.co/L0npDCy/wkretarka-dewalt-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 5,
   "id": 1
 }, {
   "name": "Wiertarko-Wkretarka",
@@ -19,6 +21,8 @@
   "price": "596,00 zl",
   "search": "Wiertarko-Wkretarka-Akumulatorowa BOSCH",
   "imageUrl": "https://i.ibb.co/ZhSY6V4/wkretarka-bosch-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 8,
   "id": 2
 }, {
   "name": "Wiertarko-Wkretarka",
@@ -30,6 +34,8 @@
   "price": "1511,40 zl",
   "search": "Wiertarko-Wkretarka-Akumulatorowa MAKITA",
   "imageUrl": "https://i.ibb.co/ssnV1CC/wkretarka-makita-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 8,
   "id": 3
 }, {
   "name": "Szlifierka katowa 125",
@@ -41,6 +47,8 @@
   "price": "361,05 zl",
   "search": "Szlifierka katowa 125 DEWALT",
   "imageUrl": "https://i.ibb.co/RTGvWBL/szlifierka-dewalt-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 10,
   "id": 4
 }, {
   "name": "Szlifierka katowa 125",
@@ -52,6 +60,8 @@
   "price": "218,00 zl",
   "search": "Szlifierka katowa 125 BOSCH",
   "imageUrl": "https://i.ibb.co/8PKsQ3s/szlifierka-bosch-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 12,
   "id": 5
 }, {
   "name": "Szlifierka katowa 125",
@@ -63,6 +73,8 @@
   "price": "239,00 zl",
   "search": "Szlifierka katowa 125 MAKITA",
   "imageUrl": "https://i.ibb.co/1LMqyG9/szlifierka-makita-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 11,
   "id": 6
 }, {
   "name": "Mlotowiertarka",
@@ -74,6 +86,8 @@
   "price": "899,99 zl",
   "search": "Mlotowiertarka DEWALT",
   "imageUrl": "https://i.ibb.co/RhQnxw4/mlotowiertarka-dewalt-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 6,
   "id": 7
 }, {
   "name": "Mlotowiertarka",
@@ -85,6 +99,8 @@
   "price": "599,00 zl",
   "search": "Mlotowiertarka BOSCH",
   "imageUrl": "https://i.ibb.co/3rY90P3/mlotowiertarka-bosch-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 7,
   "id": 8
 }, {
   "name": "Mlotowiertarka",
@@ -96,6 +112,8 @@
   "price": "601,10 zl",
   "search": "Mlotowiertarka MAKITA",
   "imageUrl": "https://i.ibb.co/4fR2dpr/mlotowiertarka-makita-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 7,
   "id": 9
 }, {
   "name": "Szlifierka katowa 230",
@@ -107,6 +125,8 @@
   "price": "859,99 zl",
   "search": "Szlifierka katowa 230 DEWALT",
   "imageUrl": "https://i.ibb.co/0XrTtbW/szlifierka-dewalt-230-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 5,
   "id": 10
 }, {
   "name": "Szlifierka katowa 230",
@@ -118,6 +138,8 @@
   "price": "469,00 zl",
   "search": "Szlifierka katowa 230 BOSCH",
   "imageUrl": "https://i.ibb.co/HnHBq6k/szlifierka-bosch-230-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 5,
   "id": 11
 }, {
   "name": "Szlifierka katowa 230",
@@ -129,9 +151,11 @@
   "price": "556,35 zl",
   "search": "Szlifierka katowa 230 MAKITA",
   "imageUrl": "https://i.ibb.co/P9tpFHV/szlifierka-makita-230-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 4,
   "id": 12
 }, {
-  "name": "Mlot wyburzeniowy",
+  "name": "Mlot",
   "producent" : "DEWALT",
   "model": "D25960K",
   "condition": "nowy",
@@ -140,9 +164,11 @@
   "price": "4919,00 zl",
   "search": "Mlot DEWALT",
   "imageUrl": "https://i.ibb.co/GP3ydMJ/Mlot-dewalt-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 2,
   "id": 13
 }, {
-  "name": "Mlot wyburzeniowy",
+  "name": "Mlot",
   "producent" : "BOSCH",
   "model": "GSH 27 VC",
   "condition": "nowy",
@@ -151,9 +177,11 @@
   "price": "5979,00 zl",
   "search": "Mlot BOSCH",
   "imageUrl": "https://i.ibb.co/yh8Pk4K/mlot-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 2,
   "id": 14
 }, {
-  "name": "Mlot wyburzeniowy",
+  "name": "Mlot",
   "producent" : "MAKITA",
   "model": "HM1812",
   "condition": "nowy",
@@ -162,6 +190,8 @@
   "price": "6981,00 zl",
   "search": "Mlot MAKITA",
   "imageUrl": "https://i.ibb.co/yBqM7qY/Mlot-makita-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 1,
   "id": 15
 }, {
   "name": "Wyrzynarka",
@@ -173,6 +203,8 @@
   "price": "1039,00 zl",
   "search": "Wyrzynarka DEWALT",
   "imageUrl": "https://i.ibb.co/m4xTzgM/wyrzynarka-dewalt-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 3,
   "id": 16
 }, {
   "name": "Wyrzynarka",
@@ -184,6 +216,8 @@
   "price": "1549,00 zl",
   "search": "Wyrzynarka BOSCH",
   "imageUrl": "https://i.ibb.co/kxrQS3P/wyrzynarka-bosch-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 4,
   "id": 17
 }, {
   "name": "Wyrzynarka",
@@ -195,6 +229,8 @@
   "price": "1399,99 zl",
   "search": "Wyrzynarka MAKITA",
   "imageUrl": "https://i.ibb.co/M27MjTD/wyrzynarka-makita-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 4,
   "id": 18
 }, {
   "name": "Pilarka tarczowa",
@@ -206,6 +242,8 @@
   "price": "1119,00 zl",
   "search": "Pilarka tarczowa DEWALT",
   "imageUrl": "https://i.ibb.co/yYYTvcH/pilarka-dewalt-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 4,
   "id": 19
 }, {
   "name": "Pilarka tarczowa",
@@ -217,6 +255,8 @@
   "price": "1029,99 zl",
   "search": "Pilarka tarczowa BOSCH",
   "imageUrl": "https://i.ibb.co/4V48z5Z/pilarka-bosch-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 5,
   "id": 20
 }, {
   "name": "Pilarka tarczowa",
@@ -228,5 +268,7 @@
   "price": "1199,99 zl",
   "search": "Pilarka tarczowa MAKITA",
   "imageUrl": "https://i.ibb.co/2s1NG0p/pilarka-makita-min.png",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "inMagazine": 6,
   "id": 21
 }]

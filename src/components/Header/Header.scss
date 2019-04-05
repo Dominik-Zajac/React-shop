@@ -1,13 +1,15 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
 .navbar {
     background-color: #2f3542;
 
     .navbar-brand {
-        font-size: 1.5rem;
-        font-weight: 500;
+        @include text(1.5rem, 500, uppercase);
+
         letter-spacing: 3px;
-        text-transform: uppercase;
         outline: none;
-        color: #ffa502;
+        color: $additional-color;
     }
 
     .navbar-collapse {
@@ -23,7 +25,7 @@
             
             .active {
                 opacity: 1;
-                color: #ffa502;
+                color: $additional-color;
             }
 
             a {
@@ -35,12 +37,12 @@
 
                 &:hover {
                     opacity: 1;
-                    color: #ffa502;
+                    color: $additional-color;
                     text-decoration: none;
                 }
             }
 
-            .fas {
+            .icon {
                 font-size: 1.5rem;
             }
         }

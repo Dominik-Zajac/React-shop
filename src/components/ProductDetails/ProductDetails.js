@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { getProduct } from '../../actions/actions-products';
+import { addToBasket } from '../../actions/actions-basket';
 
 /* Styles */
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,6 +24,9 @@ class ProductDetails extends Component {
         }));
     }
     
+    handleClickAddToBasket(id) {
+        this.props.dispatch(addToBasket(id));
+    }
     render() {
         return(
             <div className='product-wrapper'>
@@ -47,7 +53,13 @@ class ProductDetails extends Component {
                     <div className='product-info col-sm-12 col-lg-6'>
                         <h1 className='title'>{ this.props.product.name }</h1>
                         <p>{ this.props.product.price }</p>
-                        <button>Dodaj do koszyka</button>
+                        <button 
+                            onClick={this.handleClickAddToBasket.bind(this, this.props.product.id)}
+                            className={this.props.counter == this.props.product.inMagazine ? 'disableBtn' : 'enableBtn'}
+                            disabled={this.props.counter == this.props.product.inMagazine ? true : false}
+                        >
+                            {this.props.counter == this.props.product.inMagazine ? 'Brak na magazynie' : 'Dodaj do koszyka'}
+                        </button>
                     </div>
                 </div>
                 <div className='more-info'>
@@ -62,5 +74,11 @@ class ProductDetails extends Component {
         )
     }
 };
+const mapStateToProps = function(store) {
+    return {
+        selectedProduct: store.productsReducer.selectedProduct,
+        cart: store.productsReducer.cart
+    };
+};
 
-export default ProductDetails;
+export default connect(mapStateToProps)(ProductDetails);

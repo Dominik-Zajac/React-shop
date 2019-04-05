@@ -1,12 +1,12 @@
-.box-shadow {
-    max-width: 55vw;
-    min-width: 55vw;
-    
-    margin: 2%;
-    padding: 5%;
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
 
-    color: #2f3542;
-    background-color: #fff;
+.box-shadow {
+    @include width(55vw, 55vw);
+    @include spacing(2%, 5%);
+
+    color: $text-color;
+    background-color: $box-background;
     box-shadow: 0 0 10px 0 #e2e2e2;
     border-radius: 5px;
     
@@ -54,8 +54,7 @@
 @media (max-width: 960px) {
     
     .box-shadow {
-        max-width: 85vw;
-        min-width: 85vw;
+        @include width(85vw, 85vw);
         
         margin: 4% 0;
         

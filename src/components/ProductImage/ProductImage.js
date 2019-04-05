@@ -4,7 +4,7 @@ import  React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductImage.scss';
 
-const ProductImage = props => (
+const ProductImage = (props) => (
     <div className='product-box'>
         <img className='product-photo' src={ props.product.imageUrl } alt='product-photo' />
         <p className='product-title'>{ props.product.name }</p>
@@ -13,6 +13,6 @@ const ProductImage = props => (
     		<button>Kup teraz</button>
     	</div>
     </div>
-);
+)
 
 export default ProductImage;

@@ -1,20 +1,23 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     
     .title {
+        @include text(3.5rem, 500, capitalize);
+
         margin: 6vh 0;
 
-        font-size: 3.5rem;
-        font-weight: 500;
         letter-spacing: 3px;
         color: #6c707a;
     }
 
     .subtitle {
+        color: $additional-color;
         text-transform: uppercase;
-        color: #ffa502;
         text-shadow: 0 0 0.2vh #ffb682;
     }
 }
@@ -45,7 +48,7 @@
     }
 
     ol .active {
-        background-color: #ffa502;
+        background-color: $additional-color;
     }
 
     .carousel-control-next, .carousel-control-prev, ol li {
@@ -58,12 +61,12 @@
     margin-top: 10vh;
 
     .info-title {
-        text-align: center;
-        font-size: 2.5rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
+        @include text(2.5rem, 300, uppercase);
         
-        color: #ffa502;
+        text-align: center;
+        letter-spacing: 0.2em;
+        
+        color: $additional-color;
         text-shadow: 0 0 0.5vh #ffb682;
     }
 
@@ -83,9 +86,7 @@
         }
 
         h2 {
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-transform: uppercase;
+            @include text(1.2rem, 500, uppercase);
         }
 
         p {
@@ -116,12 +117,9 @@
     /* Carousel */
     .container-fluid {
         .slide {
-
             img {
-                min-width: 80vw;
-                max-width: 80vw;
-                min-height: 35vh;
-                max-height: 35vh;
+                @include width(80vw, 80vw);
+                @include height(30vh, 30vh);
             }
         }
     }

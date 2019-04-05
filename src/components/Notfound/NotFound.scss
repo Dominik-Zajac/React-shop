@@ -1,3 +1,5 @@
+@import '../../sass/_variables';
+
 .error-container {
     display: flex;
     flex-direction: column;
@@ -17,7 +19,7 @@
         text-transform: uppercase;
     }
     .first-paragraph {
-        color: #333;
+        color: $text-color;
         font-size: 3rem;
     }
 

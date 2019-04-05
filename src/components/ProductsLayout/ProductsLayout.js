@@ -5,19 +5,17 @@ import SideBar from '../SideBar/SideBar';
 /* Styles */
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
-export class ProductsLayout extends Component {
-    render() {
-        return (
-            <div className='row'>
-                <div className='col-sm-6'>
-                    <SideBar />
-                </div>
-                <div className='col-sm-6'>
-                    <ProductsList products={ this.props.products }/>
-                </div>
+const ProductsLayout = (props) => {
+    return (
+        <div className='row'>
+            <div className='col-sm-6'>
+                <SideBar />
             </div>
-        ) 
-    }
-};
+            <div className='col-sm-6'>
+                <ProductsList products={ props.products }/>
+            </div>
+        </div>
+    ) 
+}
 
 export default ProductsLayout;
