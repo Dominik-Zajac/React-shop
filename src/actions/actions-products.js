@@ -43,6 +43,5 @@ export function sortByPrice(key, direct) {
 export function sortProducts(key, direct) {
     if(key === 'price') {
         return sortByPrice(key, direct);
-    }
-        return sortByName(key, direct);
+    }   return sortByName(key, direct);
 }

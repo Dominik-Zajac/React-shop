@@ -7,37 +7,39 @@ import BtnPay from './ButtonPay';
 /* Styles */
 import './Basket.scss';
 
-const Basket = (props) => (
-	<div className='basket-container'>
-		<h1 className='title'>Koszyk</h1>
-		{props.cart.map(product => {
-			
-			const {id, imageUrl, name, description, price, inMagazine} = product;
-			const {counter, clickRemove, clickPieceAdd, clickPieceRemove} = props;
-	 		
-	 		return (
-				<BoxProduct 
-					key={id}
-					id={id}
-					imageUrl={imageUrl}
-					name={name}
-					description={description}
-					price={price}
-					inMagazine={inMagazine}
-					counter={counter}
-					clickDelete={clickRemove}
-					clickPieceAdd={clickPieceAdd}
-					clickPieceRemove={clickPieceRemove}
-				/>
-			)
-		})}
-		<div className='basket-functions'>
-			<DiscountInput />
-			<SumPrice />
-			<BtnPay />
+const Basket = (props) => {
+	return (
+		<div className='basket-container'>
+			<h1 className='title'>Koszyk</h1>
+			{props.carts.map(product => {
+				
+				const {id, imageUrl, name, description, price, inMagazine, count} = product;
+				const {counter, clickRemove, clickPieceAdd, clickPieceRemove} = props;
+		 		
+		 		return (
+					<BoxProduct
+						count={count} 
+						key={id}
+						id={id}
+						imageUrl={imageUrl}
+						name={name}
+						description={description}
+						price={price}
+						inMagazine={inMagazine}
+						clickDelete={clickRemove}
+						clickPieceAdd={clickPieceAdd}
+						clickPieceRemove={clickPieceRemove}
+					/>
+				)
+			})}
+			<div className='basket-functions'>
+				<DiscountInput />
+				<SumPrice fullAmount={props.fullAmount}/>
+				<BtnPay />
+			</div>
 		</div>
-	</div>
-)	
+	)
+}	
 
 
 export default Basket;

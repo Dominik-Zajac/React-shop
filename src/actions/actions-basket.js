@@ -11,22 +11,22 @@ export function addToBasket(id) {
 }
 
 export function deleteProduct(id) {
-	return {
-		type: REMOVE_PRODUCT,
-		id
-	}
+    return {
+        type: REMOVE_PRODUCT,
+        id
+    }
 }
 
 export function pieceAdd(id) {
-	return {
-		type: PIECE_ADD,
-		id
-	}
+    return {
+        type: PIECE_ADD,
+        id
+    }
 }
 
 export function pieceRemove(id) {
-	return {
-		type: PIECE_REMOVE,
-		id
-	}
+    return {
+        type: PIECE_REMOVE,
+        id
+    }
 }

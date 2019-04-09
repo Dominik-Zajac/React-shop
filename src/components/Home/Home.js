@@ -6,9 +6,11 @@ import {
 import Title from './Title';
 import Info from './ShopInfo';
 import CarouselContainer from './CarouselContainer';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 /* Styles */
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../sass/animations.scss';
 import './Home.scss';
 
 const items = [
@@ -104,20 +106,28 @@ class Home extends Component {
         })
 
         return (
-            <div className='home-container'>
-                <Title />
-                <CarouselContainer 
-                    next={next}
-                    items={items} 
-                    slides={slides}
-                    previous={previous}
-                    activeIndex={activeIndex} 
-                    clickHandlerIndex={goToIndex}
-                    clickHandlerNext={next} 
-                    clickHandlerPrevious={previous} 
-                />               
-                <Info />
-            </div>
+            <ReactCSSTransitionGroup
+                transitionName='fade'
+                transitionEnterTimeout={1500}
+                transitionLeaveTimeout={2000}
+                transitionAppear={true}
+                transitionAppearTimeout={1500}
+            >
+                <div className='home-container'>
+                    <Title />
+                    <CarouselContainer 
+                        next={next}
+                        items={items} 
+                        slides={slides}
+                        previous={previous}
+                        activeIndex={activeIndex} 
+                        clickHandlerIndex={goToIndex}
+                        clickHandlerNext={next} 
+                        clickHandlerPrevious={previous} 
+                    />               
+                    <Info />
+                </div>
+            </ReactCSSTransitionGroup>
         )
     }
 }

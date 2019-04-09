@@ -6,11 +6,10 @@ import ProductsLayout from '../ProductsLayout/ProductsLayout';
 import './ProductsContainer.scss';
 
 class ProductsContainer extends Component {
-
     render() {
         return (
             <div className='products-wrapper'>
-                <ProductsLayout products={ this.props.visibleProducts } />
+                <ProductsLayout products={this.props.visibleProducts} />
             </div>
         )
     }

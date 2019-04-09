@@ -1,11 +1,16 @@
 import { 
-    GET_PRODUCTS, 
-    GET_PRODUCT, 
-    SEARCH_PRODUCTS, 
-    SORT_BY_NAME, 
-    SORT_BY_PRICE
+  GET_PRODUCTS, 
+  GET_PRODUCT, 
+  SEARCH_PRODUCTS, 
+  SORT_BY_NAME, 
+  SORT_BY_PRICE
 } from '../actions/actions-products';
-import { ADD_TO_BASKET, REMOVE_PRODUCT, PIECE_ADD, PIECE_REMOVE } from '../actions/actions-basket';
+import { 
+  ADD_TO_BASKET, 
+  REMOVE_PRODUCT, 
+  PIECE_ADD, 
+  PIECE_REMOVE 
+} from '../actions/actions-basket';
 import productsData from '../data/products.json';
 
 const initialState = {
@@ -16,50 +21,9 @@ const initialState = {
         name: 'asc',
         price: 'asc'
     },
-    pieceCounter: 1,
-    cart: [{
-  "name": "Pilarka tarczowa",
-  "producent" : "DEWALT",
-  "model": "DCS391",
-  "condition": "nowy",
-  "voltage": "18V",
-  "power": "-",
-  "price": "1119,00 zl",
-  "search": "Pilarka tarczowa DEWALT",
-  "imageUrl": "https://i.ibb.co/yYYTvcH/pilarka-dewalt-min.png",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  "inMagazine": 12,
-  "id": 19,
-  "count": 0,
-}, {
-  "name": "Pilarka tarczowa",
-  "producent" : "BOSCH",
-  "model": "GKS 18V-Li",
-  "condition": "nowy",
-  "voltage": "18V",
-  "power": "-",
-  "price": "1029,99 zl",
-  "search": "Pilarka tarczowa BOSCH",
-  "imageUrl": "https://i.ibb.co/4V48z5Z/pilarka-bosch-min.png",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  "inMagazine": 12,
-  "id": 20,
-  "count": 0,
-}, {
-  "name": "Pilarka tarczowa",
-  "producent" : "MAKITA",
-  "model": "DSS610Z",
-  "condition": "nowy",
-  "voltage": "18V",
-  "power": "-",
-  "price": "1199,99 zl",
-  "search": "Pilarka tarczowa MAKITA",
-  "imageUrl": "https://i.ibb.co/2s1NG0p/pilarka-makita-min.png",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  "inMagazine": 12,
-  "id": 21,
-  "count" : 0,
-}],
+    pieceCounter: 0,
+    sumPrice: 0,
+    carts: [],
 };
 
 const productsReducer = function (state = initialState, action) {
@@ -111,26 +75,62 @@ const productsReducer = function (state = initialState, action) {
 
         case ADD_TO_BASKET:
             const basket = state.products.find(product => product.id === action.id);
-            const cart = [...state.cart, basket]
+            const carts = [...state.carts, basket];
             
-            if(state.cart.find(product => product.id === action.id)) {
-                return Object.assign({}, state, {pieceCounter: state.pieceCounter + 1})
+            if(state.carts.find(cart => cart.id === action.id)) {
+                const addToBasketProduct = state.products.find(product => product.id === action.id);
+                const counterAddToBasket = ++addToBasketProduct.count;
+                const productPrice = parseFloat(addToBasketProduct.price);
+                
+                return Object.assign({}, state, {
+                    pieceCounter: ++state.pieceCounter,
+                    sumPrice: state.sumPrice + productPrice
+                });
             } else {
-                return Object.assign({}, state, {cart})
+                const addToBasketCart = state.products.find(product => product.id === action.id);
+                const cartPrice = parseFloat(addToBasketCart.price);
+
+                return Object.assign({}, state, {
+                    carts, 
+                    sumPrice: state.sumPrice + cartPrice, 
+                    pieceCounter: ++state.pieceCounter
+                });
             }
 
         case REMOVE_PRODUCT:
-            const removeCart = state.cart.filter(product => product.id !== action.id);
-            return Object.assign({}, state, { cart: removeCart })
+            const removeCart = state.carts.filter(product => product.id !== action.id);
+            const removeCartProduct = state.products.find(product => product.id === action.id);
+            const counterRemoveProduct = parseFloat(removeCartProduct.count);
+            console.log(counterRemoveProduct)
+            const priceRemoveProduct = parseFloat(removeCartProduct.price);
+            
+            return Object.assign({}, state, {
+                carts: removeCart,
+                sumPrice: state.sumPrice - priceRemoveProduct,
+                pieceCounter: state.pieceCounter - counterRemoveProduct,
+                counterRemoveProduct: 1
+            });
 
         case PIECE_ADD:
-            // const pieceCounter = state.cart.find(product => product.id === action.id);
+            const pieceAdd = state.products.find(product => product.id === action.id);
+            const counterPieceAdd = ++pieceAdd.count 
+            const pricePieceAdd = parseFloat(pieceAdd.price);
 
-            return Object.assign({}, state, {pieceCounter: state.pieceCounter + 1});
+            return Object.assign({}, state, {
+                pieceCounter: ++state.pieceCounter, 
+                sumPrice: state.sumPrice + pricePieceAdd
+            });
 
         case PIECE_REMOVE:
-            return Object.assign({}, state, {pieceCounter: state.pieceCounter - 1})
-    }
+            const pieceRemove = state.products.find(product => product.id === action.id);
+            const counterPieceRemove = --pieceRemove.count;
+            const pricePieceRemove = parseFloat(pieceRemove.price);
+            
+            return Object.assign({}, state, {
+                pieceCounter: --state.pieceCounter, 
+                sumPrice: state.sumPrice - pricePieceRemove
+            })
+        }
 
     return state;
 };

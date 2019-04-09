@@ -1,14 +1,16 @@
 import React from 'react';
 import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestion, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export const FaqBox = () => {
     return (
         <div className='box-shadow'>
             <div className='container-collapse'>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Pierwsze pytanie</p>
-                    <i id='toggler1' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler1' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler1'>
                     <Card>
@@ -20,9 +22,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Drugie pytanie</p>
-                    <i id='toggler2' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler2' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler2'>
                     <Card>
@@ -34,9 +36,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Trzecie pytanie</p>
-                    <i id='toggler3' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler3' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler3'>
                     <Card>
@@ -48,9 +50,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Czwarte pytanie</p>
-                    <i id='toggler4' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler4' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler4'>
                     <Card>
@@ -62,9 +64,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Piate pytanie</p>
-                    <i id='toggler5' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler5' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler5'>
                     <Card>
@@ -76,9 +78,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Szoste pytanie</p>
-                    <i id='toggler6' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler6' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler6'>
                     <Card>
@@ -90,9 +92,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Siodme pytanie</p>
-                    <i id='toggler7' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler7' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler7'>
                     <Card>
@@ -104,9 +106,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Osme pytanie</p>
-                    <i id='toggler8' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler8' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler8'>
                     <Card>
@@ -118,9 +120,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Dziewiate pytanie</p>
-                    <i id='toggler9' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler9' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler9'>
                     <Card>
@@ -132,9 +134,9 @@ export const FaqBox = () => {
                     </Card>
                 </UncontrolledCollapse>
                 <div className='box-collapse'>
-                    <i className='fas fa-question icon'></i>
+                    <FontAwesomeIcon className='icon' icon={faQuestion} />
                     <p className='paragraph'>Dziesiate pytanie</p>
-                    <i id='toggler10' className='fas fa-chevron-down icon'></i>
+                    <FontAwesomeIcon id='toggler10' className='icon' icon={faChevronDown} />
                 </div>
                 <UncontrolledCollapse toggler='#toggler10'>
                     <Card>

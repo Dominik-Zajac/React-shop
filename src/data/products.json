@@ -10,6 +10,7 @@
   "imageUrl": "https://i.ibb.co/L0npDCy/wkretarka-dewalt-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 5,
+  "count": 1,
   "id": 1
 }, {
   "name": "Wiertarko-Wkretarka",
@@ -23,6 +24,7 @@
   "imageUrl": "https://i.ibb.co/ZhSY6V4/wkretarka-bosch-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 8,
+  "count": 1,
   "id": 2
 }, {
   "name": "Wiertarko-Wkretarka",
@@ -36,6 +38,7 @@
   "imageUrl": "https://i.ibb.co/ssnV1CC/wkretarka-makita-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 8,
+  "count": 1,
   "id": 3
 }, {
   "name": "Szlifierka katowa 125",

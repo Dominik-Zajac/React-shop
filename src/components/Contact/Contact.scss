@@ -3,11 +3,12 @@
 
 .contact-container {
     @include width(55vw, 50vw);
-    @include spacing(8%, 2% auto);
+    @include spacing(10% 0, 2% auto);
 
     display: flex;
     justify-content: center;
     
+    min-height: 60vh;
     background-color: $box-background;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 #e2e2e2;
@@ -58,7 +59,8 @@
 @media (max-width: 960px) {
     
     .contact-container {
-        
+   		@include width(85vw, 80vw);
+   
         .contact-details {
             align-items: center;
         
