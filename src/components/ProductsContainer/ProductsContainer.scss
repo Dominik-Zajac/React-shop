@@ -11,7 +11,6 @@
 
 /* Media */
 @media (max-width: 960px) {
-
     .products-wrapper {
         @include width(90%, 90%);
     }

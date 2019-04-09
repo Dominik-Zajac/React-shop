@@ -49,7 +49,6 @@ class ProductList extends Component {
             </div>
         )
     }
-
 } 
 
 export default ProductList;

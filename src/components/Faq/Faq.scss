@@ -51,11 +51,9 @@
 }
 
 /* Media */
-@media (max-width: 960px) {
-    
+@media (max-width: 960px) {  
     .box-shadow {
         @include width(85vw, 85vw);
-        
         margin: 4% 0;
         
         .container-collapse {

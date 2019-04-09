@@ -119,7 +119,6 @@
 
 /* Media */
 @media (max-width: 960px) {
-
     .product-box {
         @include width(80vw, 80vw);
         flex-direction: column;

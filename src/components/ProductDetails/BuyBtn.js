@@ -7,8 +7,6 @@ const BuyButton = (props) => {
         inMagazine
     } = props;
 
-    console.log(`na magazynie   ${inMagazine}`);
-    console.log(`count    ${count}`)
     const conditionClass = count < inMagazine ? 'enableBtn' : 'disableBtn';
     const conditionText = count < inMagazine ? 'Dodaj do koszyka' : 'Brak na magazynie';
     const conditionDisabled = count < inMagazine ? false : true;

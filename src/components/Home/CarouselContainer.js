@@ -5,7 +5,7 @@ import {
     CarouselIndicators,
 } from 'reactstrap';
 
-const CarouselContainer = (props) => {
+const CarouselContainer = props => {
     const {
         next, 
         items,

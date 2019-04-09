@@ -7,7 +7,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import '../../sass/animations.scss';
 
-const ProductsLayout = (props) => {
+const ProductsLayout = props => {
     return (
         <ReactCSSTransitionGroup
             transitionName='fade'

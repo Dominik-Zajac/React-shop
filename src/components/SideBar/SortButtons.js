@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SortButtons = (props) => {
+const SortButtons = props => {
     const {clickSort} = props;
 
     return (

@@ -56,14 +56,12 @@
 }
 
 /* Media */
-@media (max-width: 960px) {
-    
+@media (max-width: 960px) { 
     .contact-container {
    		@include width(85vw, 80vw);
    
         .contact-details {
             align-items: center;
-        
         }
 
         .localization {

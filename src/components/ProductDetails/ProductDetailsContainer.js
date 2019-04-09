@@ -86,7 +86,7 @@ const mapStateToProps = function(store) {
     return {
         selectedProduct: store.productsReducer.selectedProduct,
         cart: store.productsReducer.cart
-    };
+    }
 };
 
 export default connect(mapStateToProps)(ProductDetailsContainer);

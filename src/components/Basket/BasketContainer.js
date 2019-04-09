@@ -52,7 +52,7 @@ const mapStateToProps = function(store) {
     return {
         carts: store.productsReducer.carts,
         fullAmount: store.productsReducer.sumPrice
-    };
+    }
 };
 
 export default connect(mapStateToProps)(BasketContainer);

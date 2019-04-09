@@ -60,7 +60,7 @@ const mapStateToProps = function(store) {
     return {
         cart: store.productsReducer.cart,
         counter: store.productsReducer.pieceCounter
-    };
+    }
 };
 
 export default connect(mapStateToProps)(ProductBox);

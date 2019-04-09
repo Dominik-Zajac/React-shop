@@ -6,7 +6,7 @@ export const SORT_BY_PRICE = 'SORT_BY_PRICE';
 
 export function getProducts() {
     return {
-    type: GET_PRODUCTS
+        type: GET_PRODUCTS
     }
 }
 

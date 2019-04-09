@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MoreInfo = (props) => {
+const MoreInfo = props => {
     const {
         producent, 
         model, 

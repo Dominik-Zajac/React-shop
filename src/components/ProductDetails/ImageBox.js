@@ -3,7 +3,7 @@ import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 
-const ImageBox = (props) => {
+const ImageBox = props => {
     const {name, toggle, imageUrl, modal} = props;
 
     return (

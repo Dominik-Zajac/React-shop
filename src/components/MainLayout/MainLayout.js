@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-const MainLayout = (props) => {
+const MainLayout = props => {
     return (
         <div>
             <Header />

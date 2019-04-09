@@ -4,7 +4,7 @@ import ProductInfo from './BasketInfo';
 import ProductPrice from './BasketPrice';
 import ProductFunctions from './BasketFunctions';
 
-const BoxProduct = (props) => {
+const BoxProduct = props => {
     const {
         id, 
         name, 

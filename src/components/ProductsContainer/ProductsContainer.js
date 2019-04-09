@@ -18,7 +18,7 @@ class ProductsContainer extends Component {
 const mapStateToProps = function(store) {
     return {
         visibleProducts: store.productsReducer.visibleProducts,
-    };
+    }
 };
 
 export default connect(mapStateToProps)(ProductsContainer);

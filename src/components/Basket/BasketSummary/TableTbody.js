@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableTbody = (props) => {
+const TableTbody = props => {
     const {
         name, 
         price, 

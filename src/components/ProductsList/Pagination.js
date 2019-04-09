@@ -5,7 +5,7 @@ import {
     PaginationLink 
 } from 'reactstrap';
 
-const PageNumbering = (props) => {
+const PageNumbering = props => {
     const {currentPage, pageCount, pageSize, click} = props;
     
     return (

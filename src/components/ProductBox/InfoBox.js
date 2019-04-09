@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InfoBox = (props) => {
+const InfoBox = props => {
     return (
     <div className='info-box'>
         <p className='product-title'>{props.name}</p>

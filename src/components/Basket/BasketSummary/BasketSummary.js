@@ -10,7 +10,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../../../sass/animations.scss';
 import './BasketSummary.scss';
 
-const Summary = (props) => {
+const Summary = props => {
     return(
         <ReactCSSTransitionGroup
             transitionName='fade'
@@ -35,12 +35,12 @@ const Summary = (props) => {
                             
                             return(
                                 <TableTbody
-                                	key={index}
-                                    imageUrl={imageUrl}
-                                    index={index}
+                                    key={index}
                                     name={name}
                                     count={count}
                                     price={price}
+                                    index={index}
+                                    imageUrl={imageUrl}
                                     producent={producent}
                                 />
                             )
@@ -57,7 +57,7 @@ const mapStateToProps = function(store) {
     return {
         carts: store.productsReducer.carts,
         sumPrice: store.productsReducer.sumPrice
-    };
+    }
 };
 
 export default connect(mapStateToProps)(Summary);
