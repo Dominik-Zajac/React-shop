@@ -52,6 +52,7 @@
   "imageUrl": "https://i.ibb.co/RTGvWBL/szlifierka-dewalt-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 10,
+  "count": 1,
   "id": 4
 }, {
   "name": "Szlifierka katowa 125",
@@ -65,6 +66,7 @@
   "imageUrl": "https://i.ibb.co/8PKsQ3s/szlifierka-bosch-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 12,
+  "count": 1,
   "id": 5
 }, {
   "name": "Szlifierka katowa 125",
@@ -78,6 +80,7 @@
   "imageUrl": "https://i.ibb.co/1LMqyG9/szlifierka-makita-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 11,
+  "count": 1,
   "id": 6
 }, {
   "name": "Mlotowiertarka",
@@ -91,6 +94,7 @@
   "imageUrl": "https://i.ibb.co/RhQnxw4/mlotowiertarka-dewalt-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 6,
+  "count": 1,
   "id": 7
 }, {
   "name": "Mlotowiertarka",
@@ -104,6 +108,7 @@
   "imageUrl": "https://i.ibb.co/3rY90P3/mlotowiertarka-bosch-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 7,
+  "count": 1,
   "id": 8
 }, {
   "name": "Mlotowiertarka",
@@ -117,6 +122,7 @@
   "imageUrl": "https://i.ibb.co/4fR2dpr/mlotowiertarka-makita-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 7,
+  "count": 1,
   "id": 9
 }, {
   "name": "Szlifierka katowa 230",
@@ -130,6 +136,7 @@
   "imageUrl": "https://i.ibb.co/0XrTtbW/szlifierka-dewalt-230-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 5,
+  "count": 1,
   "id": 10
 }, {
   "name": "Szlifierka katowa 230",
@@ -143,6 +150,7 @@
   "imageUrl": "https://i.ibb.co/HnHBq6k/szlifierka-bosch-230-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 5,
+  "count": 1,
   "id": 11
 }, {
   "name": "Szlifierka katowa 230",
@@ -156,6 +164,7 @@
   "imageUrl": "https://i.ibb.co/P9tpFHV/szlifierka-makita-230-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 4,
+  "count": 1,
   "id": 12
 }, {
   "name": "Mlot",
@@ -169,6 +178,7 @@
   "imageUrl": "https://i.ibb.co/GP3ydMJ/Mlot-dewalt-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 2,
+  "count": 1,
   "id": 13
 }, {
   "name": "Mlot",
@@ -182,6 +192,7 @@
   "imageUrl": "https://i.ibb.co/yh8Pk4K/mlot-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 2,
+  "count": 1,
   "id": 14
 }, {
   "name": "Mlot",
@@ -195,6 +206,7 @@
   "imageUrl": "https://i.ibb.co/yBqM7qY/Mlot-makita-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 1,
+  "count": 1,
   "id": 15
 }, {
   "name": "Wyrzynarka",
@@ -208,6 +220,7 @@
   "imageUrl": "https://i.ibb.co/m4xTzgM/wyrzynarka-dewalt-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 3,
+  "count": 1,
   "id": 16
 }, {
   "name": "Wyrzynarka",
@@ -221,6 +234,7 @@
   "imageUrl": "https://i.ibb.co/kxrQS3P/wyrzynarka-bosch-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 4,
+  "count": 1,
   "id": 17
 }, {
   "name": "Wyrzynarka",
@@ -234,6 +248,7 @@
   "imageUrl": "https://i.ibb.co/M27MjTD/wyrzynarka-makita-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 4,
+  "count": 1,
   "id": 18
 }, {
   "name": "Pilarka tarczowa",
@@ -247,6 +262,7 @@
   "imageUrl": "https://i.ibb.co/yYYTvcH/pilarka-dewalt-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 4,
+  "count": 1,
   "id": 19
 }, {
   "name": "Pilarka tarczowa",
@@ -260,6 +276,7 @@
   "imageUrl": "https://i.ibb.co/4V48z5Z/pilarka-bosch-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 5,
+  "count": 1,
   "id": 20
 }, {
   "name": "Pilarka tarczowa",
@@ -273,5 +290,6 @@
   "imageUrl": "https://i.ibb.co/2s1NG0p/pilarka-makita-min.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "inMagazine": 6,
+  "count": 1,
   "id": 21
 }]

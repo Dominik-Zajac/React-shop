@@ -16,7 +16,8 @@ class ProductDetailsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: false
+            modal: false,
+            counter: 0
         };
 
         this.toggle = this.toggle.bind(this);
@@ -34,6 +35,9 @@ class ProductDetailsContainer extends Component {
     
     handleClickAddToBasket(id) {
         this.props.dispatch(addToBasket(id));
+        this.setState({
+            counter: this.state.counter + 1
+        })
     }
 
     render() {
@@ -84,8 +88,7 @@ class ProductDetailsContainer extends Component {
 
 const mapStateToProps = function(store) {
     return {
-        selectedProduct: store.productsReducer.selectedProduct,
-        cart: store.productsReducer.cart
+        selectedProduct: store.productsReducer.selectedProduct
     }
 };
 

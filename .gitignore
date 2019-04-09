@@ -13,6 +13,7 @@
 .env
 .babelrc
 webpack.config.js
+/src/index.html
 
 # misc
 .DS_Store

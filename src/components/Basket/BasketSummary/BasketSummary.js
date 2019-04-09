@@ -12,16 +12,16 @@ import './BasketSummary.scss';
 
 const Summary = props => {
     return(
-        <ReactCSSTransitionGroup
-            transitionName='fade'
-            transitionEnterTimeout={1500}
-            transitionLeaveTimeout={2000}
-            transitionAppear={true}
-            transitionAppearTimeout={1500}
-        >
-            <div className='summary-container'>
+        <div className='summary-container'>
+            <ReactCSSTransitionGroup
+                transitionName='fade'
+                transitionEnterTimeout={1500}
+                transitionLeaveTimeout={2000}
+                transitionAppear={true}
+                transitionAppearTimeout={1500}
+            >
                 <h1 className='title-summary'>Podsumowanie</h1>
-                <Table hover responsive>
+                <Table responsive>
                     <TableThead />
                     <tbody>
                         {props.carts.map((product, index) => {
@@ -48,15 +48,15 @@ const Summary = props => {
                     </tbody>
                 </Table>
                 <SummaryFunctions sumPrice={props.sumPrice} />
-            </div>
-        </ReactCSSTransitionGroup> 
+            </ReactCSSTransitionGroup> 
+        </div>
     )
 }
 
 const mapStateToProps = function(store) {
     return {
-        carts: store.productsReducer.carts,
-        sumPrice: store.productsReducer.sumPrice
+        carts: store.basketReducer.carts,
+        sumPrice: store.basketReducer.sumPrice
     }
 };
 

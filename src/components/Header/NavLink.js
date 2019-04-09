@@ -46,7 +46,7 @@ class NavLink extends Component {
 
 const mapStateToProps = function(store) {
     return {
-        counter: store.productsReducer.pieceCounter
+        counter: store.basketReducer.pieceCounter
     }
 };
 

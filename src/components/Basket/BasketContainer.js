@@ -50,8 +50,8 @@ class BasketContainer extends Component {
 
 const mapStateToProps = function(store) {
     return {
-        carts: store.productsReducer.carts,
-        fullAmount: store.productsReducer.sumPrice
+        carts: store.basketReducer.carts,
+        fullAmount: store.basketReducer.sumPrice
     }
 };
 
