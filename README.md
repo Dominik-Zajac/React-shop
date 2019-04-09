@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Version:
+
+See demo version [https://sklep-narzedzia.firebaseapp.com/#/](here).
+
 
 ## Available Scripts
 
