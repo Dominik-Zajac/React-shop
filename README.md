@@ -1,6 +1,6 @@
 ## Live Version:
 
-See demo version [https://sklep-narzedzia.firebaseapp.com/#/](here).
+See demo version [here](https://sklep-narzedzia.firebaseapp.com/#/).
 
 
 ## Available Scripts
