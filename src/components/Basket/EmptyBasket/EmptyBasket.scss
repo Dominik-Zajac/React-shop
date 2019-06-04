@@ -5,43 +5,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     min-height: 80vh;
-    
+
     img {
         max-width: 20vw;
         max-height: 20vh;
 
         margin-bottom: 5vh;
     }
-    
+
     .title {
         margin-bottom: 2vh;
-        
+
         color: $text-color;
     }
-    
+
     .subtitle {
         color: $secondary-color;
     }
 }
 
 /* Media */
-@media (max-width: 960px) {   
+@media (max-width: 960px) {
     .container-basket {
         text-align: center;
-        
+
         img {
             max-width: 30vw;
             max-height: 30vh;
         }
-        
+
         .title {
-            font-size: 2rem;            
+            font-size: 2rem;
         }
-        
+
         .subtitle {
-            font-size: 1.7rem;          
+            font-size: 1.7rem;
         }
     }
 }
