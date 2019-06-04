@@ -12,20 +12,20 @@ import ProductsContainer from './components/ProductsContainer/ProductsContainer'
 import ProductDetailsContainer from './components/ProductDetails/ProductDetailsContainer';
 
 export default (
-    <Route exact path='/' component={ MainLayout }>
-        <IndexRoute component={ Home } />
-        <Route path='/home' component={ Home } />
+    <Route exact path='/' component={MainLayout}>
+        <IndexRoute component={Home} />
+        <Route path='/home' component={Home} />
         <Route path='products'>
-            <IndexRoute component={ ProductsContainer } />
-            <Route path='product/:id' component={ ProductDetailsContainer } />
+            <IndexRoute component={ProductsContainer} />
+            <Route path=':id' component={ProductDetailsContainer} />
         </Route>
-        <Route path='faq' component={ Faq } />
-        <Route path='regulations' component={ Regulations } />
-        <Route path='contact' component={ Contact } />
+        <Route path='faq' component={Faq} />
+        <Route path='regulations' component={Regulations} />
+        <Route path='contact' component={Contact} />
         <Route path='basket'>
-            <IndexRoute component={ Basket } />
-            <Route path='summary' component={ BasketSummary } />
+            <IndexRoute component={Basket} />
+            <Route path='summary' component={BasketSummary} />
         </Route>
-        <Route path='*' component={ NotFound} />
+        <Route path='*' component={NotFound} />
     </Route>
 )

@@ -35,7 +35,7 @@ class ProductList extends Component {
                     (currentPage + 1) * pageSize
                 ).map(product =>
                     <div key={product.id}>
-                        <Link className='navbar-brand' to={'products/product/' + product.id}>
+                        <Link className='navbar-brand' to={'products/' + product.id}>
                             <ProductBox product={product} />
                         </Link>
                     </div>
