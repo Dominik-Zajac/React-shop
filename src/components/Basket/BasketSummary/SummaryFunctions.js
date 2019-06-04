@@ -5,7 +5,7 @@ const SummaryFunctions = props => {
         <div className='summary-functions'>
             <span>Do zaplaty: {props.sumPrice} zl</span>
             <button>Zamow i zaplac</button>
-        </div>  
+        </div>
     )
 }
 

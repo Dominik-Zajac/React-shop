@@ -11,7 +11,7 @@ import '../../../sass/animations.scss';
 import './BasketSummary.scss';
 
 const Summary = props => {
-    return(
+    return (
         <div className='summary-container'>
             <ReactCSSTransitionGroup
                 transitionName='fade'
@@ -25,35 +25,25 @@ const Summary = props => {
                     <TableThead />
                     <tbody>
                         {props.carts.map((product, index) => {
-                            const {
-                                name, 
-                                count, 
-                                price, 
-                                imageUrl, 
-                                producent
-                            } = product;
-                            
-                            return(
+
+
+                            return (
                                 <TableTbody
+                                    {...product}
                                     key={index}
-                                    name={name}
-                                    count={count}
-                                    price={price}
                                     index={index}
-                                    imageUrl={imageUrl}
-                                    producent={producent}
                                 />
                             )
                         })}
                     </tbody>
                 </Table>
                 <SummaryFunctions sumPrice={props.sumPrice} />
-            </ReactCSSTransitionGroup> 
+            </ReactCSSTransitionGroup>
         </div>
     )
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         carts: store.basketReducer.carts,
         sumPrice: store.basketReducer.sumPrice
