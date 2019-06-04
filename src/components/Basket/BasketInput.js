@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DiscountInput = () => (
-    <input 
+    <input
         type='text'
         placeholder='Kod rabatowy...'
     />

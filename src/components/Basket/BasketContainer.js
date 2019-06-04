@@ -17,7 +17,7 @@ class BasketContainer extends Component {
         this.props.dispatch(deleteProduct(id));
     }
 
-    handlePieceAdd(id){
+    handlePieceAdd(id) {
         this.props.dispatch(pieceAdd(id));
     }
 
@@ -34,21 +34,21 @@ class BasketContainer extends Component {
 
         return (
             /* Liczba produktow uzaleznia wyswietalnie danego (komponentu) koszyka */
-            carts < 1 
-            ? <EmptyBasket /> 
-            : <Basket
-                 carts={carts}
-                 fullAmount={fullAmount}
-                 product={selectedProducts}
-                 clickRemove={this.clickRemove}
-                 clickPieceAdd={this.clickPieceAdd}
-                 clickPieceRemove={this.clickPieceRemove}
-            />  
+            carts < 1
+                ? <EmptyBasket />
+                : <Basket
+                    carts={carts}
+                    fullAmount={fullAmount}
+                    product={selectedProducts}
+                    clickRemove={this.clickRemove}
+                    clickPieceAdd={this.clickPieceAdd}
+                    clickPieceRemove={this.clickPieceRemove}
+                />
         )
     }
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         carts: store.basketReducer.carts,
         fullAmount: store.basketReducer.sumPrice
