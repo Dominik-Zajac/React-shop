@@ -31,8 +31,8 @@ const items = [
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.state = { 
-            activeIndex: 0 
+        this.state = {
+            activeIndex: 0
         };
 
         this.next = this.next.bind(this);
@@ -52,57 +52,57 @@ class Home extends Component {
 
     next() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === items.length - 1 
-        ? 0 
-        : this.state.activeIndex + 1;
-    
-        this.setState({ 
-            activeIndex: nextIndex 
+        const nextIndex = this.state.activeIndex === items.length - 1
+            ? 0
+            : this.state.activeIndex + 1;
+
+        this.setState({
+            activeIndex: nextIndex
         });
     }
 
     previous() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === 0 
-        ? items.length - 1 
-        : this.state.activeIndex - 1;
-    
-        this.setState({ 
-            activeIndex: nextIndex 
+        const nextIndex = this.state.activeIndex === 0
+            ? items.length - 1
+            : this.state.activeIndex - 1;
+
+        this.setState({
+            activeIndex: nextIndex
         });
     }
 
     goToIndex(newIndex) {
         if (this.animating) return;
-    
+
         this.setState({
             activeIndex: newIndex
         });
     }
 
     render() {
-        const {activeIndex} = this.state;
+        const { activeIndex } = this.state;
         const {
-            next, 
-            previous, 
-            goToIndex, 
-            onExited, 
+            next,
+            previous,
+            goToIndex,
+            onExited,
             onExiting
         } = this;
         const slides = items.map((item) => {
             const {
-                src, 
+                src,
                 altText
             } = item;
-            
+
             return (
                 <CarouselItem
-                    key={src} 
+                    key={src}
                     onExiting={onExiting}
                     onExited={onExited}
                 >
-                    <img 
-                        src={src} 
+                    <img
+                        src={src}
                         alt={altText}
                     />
                 </CarouselItem>
@@ -119,16 +119,16 @@ class Home extends Component {
             >
                 <div className='home-container'>
                     <Title />
-                    <CarouselContainer 
+                    <CarouselContainer
                         next={next}
-                        items={items} 
+                        items={items}
                         slides={slides}
                         previous={previous}
-                        activeIndex={activeIndex} 
+                        activeIndex={activeIndex}
                         clickHandlerIndex={goToIndex}
-                        clickHandlerNext={next} 
-                        clickHandlerPrevious={previous} 
-                    />               
+                        clickHandlerNext={next}
+                        clickHandlerPrevious={previous}
+                    />
                     <Info />
                 </div>
             </ReactCSSTransitionGroup>

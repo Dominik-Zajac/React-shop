@@ -9,21 +9,21 @@
     background-color: $box-background;
     box-shadow: 0 0 10px 0 #e2e2e2;
     border-radius: 5px;
-    
+
     .container-collapse {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-    
+
         min-width: 100%;
-    
-        .box-collapse{
+
+        .box-collapse {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             margin: 1% 0;
-        
+
             .icon,
             .paragraph {
                 margin: 10px;
@@ -33,11 +33,11 @@
             .fa-chevron-down {
                 cursor: pointer;
             }
-    
+
             .fa-question {
                 color: #ffa502;
             }
-    
+
             .paragraph {
                 letter-spacing: 1px;
             }
@@ -51,14 +51,14 @@
 }
 
 /* Media */
-@media (max-width: 960px) {  
+@media (max-width: 960px) {
     .box-shadow {
         @include width(85vw, 85vw);
         margin: 4% 0;
-        
+
         .container-collapse {
-        
-            .box-collapse{
+
+            .box-collapse {
                 margin-bottom: 8%;
 
                 .icon,
@@ -76,5 +76,5 @@
                 font-size: 0.9rem;
             }
         }
-    }   
+    }
 }

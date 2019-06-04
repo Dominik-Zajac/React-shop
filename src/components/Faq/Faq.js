@@ -4,7 +4,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 /* Styles */
 import '../../sass/animations.scss';
-import './Faq.scss'; 
+import './Faq.scss';
 
 const Faq = () => (
     <ReactCSSTransitionGroup
@@ -15,7 +15,7 @@ const Faq = () => (
         transitionAppearTimeout={1500}
     >
         <FaqBox />
-    </ReactCSSTransitionGroup>      
+    </ReactCSSTransitionGroup>
 )
 
 export default Faq;

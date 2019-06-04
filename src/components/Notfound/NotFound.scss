@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     margin: 4%;
 
     img {
@@ -18,6 +18,7 @@
     .second-paragraph {
         text-transform: uppercase;
     }
+
     .first-paragraph {
         color: $text-color;
         font-size: 3rem;
@@ -37,7 +38,7 @@
         .first-paragraph {
             font-size: 2rem;
         }
-        
+
         .second-paragraph {
             font-size: 1rem;
         }

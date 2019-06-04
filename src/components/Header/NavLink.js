@@ -18,7 +18,7 @@ class NavLink extends Component {
                         Products
                     </Link>
                 </li>
-                 <li className='nav-link'>
+                <li className='nav-link'>
                     <Link to='/faq' activeClassName='active'>
                         FAQ
                     </Link>
@@ -44,7 +44,7 @@ class NavLink extends Component {
     }
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         counter: store.basketReducer.pieceCounter
     }

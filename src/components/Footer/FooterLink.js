@@ -14,7 +14,7 @@ const Links = () => {
                     Products
                 </Link>
             </li>
-             <li className='footer-link'>
+            <li className='footer-link'>
                 <Link to='/faq' activeClassName='active'>
                     FAQ
                 </Link>

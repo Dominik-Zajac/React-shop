@@ -15,8 +15,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler1'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -29,8 +29,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler2'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -43,8 +43,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler3'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -57,8 +57,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler4'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -71,8 +71,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler5'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -85,8 +85,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler6'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -99,8 +99,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler7'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -113,8 +113,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler8'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -127,8 +127,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler9'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>
@@ -141,8 +141,8 @@ export const FaqBox = () => {
                 <UncontrolledCollapse toggler='#toggler10'>
                     <Card>
                         <CardBody>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Sed tincidunt eleifend purus, 
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tincidunt eleifend purus,
                             id aliquam mi sollicitudin ut. Pellentesque ut urna urna.
                         </CardBody>
                     </Card>

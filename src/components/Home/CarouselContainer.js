@@ -7,37 +7,37 @@ import {
 
 const CarouselContainer = props => {
     const {
-        next, 
+        next,
         items,
-        slides, 
-        previous, 
-        activeIndex, 
-        clickHandlerNext, 
-        clickHandlerIndex, 
+        slides,
+        previous,
+        activeIndex,
+        clickHandlerNext,
+        clickHandlerIndex,
         clickHandlerPrevious
     } = props;
-    
+
     return (
         <Carousel
             activeIndex={activeIndex}
             next={next}
             previous={previous}
-        >   
-            <CarouselIndicators 
-                items={items} 
-                activeIndex={activeIndex} 
-                onClickHandler={clickHandlerIndex} 
+        >
+            <CarouselIndicators
+                items={items}
+                activeIndex={activeIndex}
+                onClickHandler={clickHandlerIndex}
             />
             {slides}
-            <CarouselControl 
-                direction='prev' 
-                directionText='Previous' 
-                onClickHandler={clickHandlerPrevious} 
+            <CarouselControl
+                direction='prev'
+                directionText='Previous'
+                onClickHandler={clickHandlerPrevious}
             />
-            <CarouselControl 
-                direction='next' 
-                directionText='Next' 
-                onClickHandler={clickHandlerNext} 
+            <CarouselControl
+                direction='next'
+                directionText='Next'
+                onClickHandler={clickHandlerNext}
             />
         </Carousel>
     )
