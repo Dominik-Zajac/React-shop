@@ -15,7 +15,7 @@ class ProductsContainer extends Component {
     }
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         visibleProducts: store.productsReducer.visibleProducts,
     }
