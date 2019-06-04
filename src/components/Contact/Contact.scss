@@ -7,24 +7,24 @@
 
     display: flex;
     justify-content: center;
-    
+
     min-height: 60vh;
     background-color: $box-background;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 #e2e2e2;
-    
+
     .contact-details {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-    
+
         margin: 10% 0%;
         line-height: 10px;
-        
+
         .contact-title {
             margin-bottom: 8%;
-            
+
             font-weight: 700;
             text-transform: uppercase;
             color: #6c707a;
@@ -33,7 +33,7 @@
         .line {
             height: 3px;
             width: 200px;
-            
+
             margin: 0 0 20% 0;
 
             border: none;
@@ -47,7 +47,7 @@
 
     .localization {
         margin: 6% 0;
-        
+
         img {
             max-width: 40vw;
             max-height: 45vh;
@@ -56,17 +56,17 @@
 }
 
 /* Media */
-@media (max-width: 960px) { 
+@media (max-width: 960px) {
     .contact-container {
-   		@include width(85vw, 80vw);
-   
+        @include width(85vw, 80vw);
+
         .contact-details {
             align-items: center;
         }
 
         .localization {
             text-align: center;
-            
+
             img {
                 max-width: 60vw;
             }
