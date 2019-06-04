@@ -1,11 +1,11 @@
 import React from 'react';
 
 const InputSearch = props => (
-    <input 
+    <input
         type='text'
         minLength='2'
         maxLength='20'
-        placeholder='Search...' 
+        placeholder='Search...'
         onChange={props.changeSearch}
     />
 )

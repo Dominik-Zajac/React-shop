@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Title from './SortTitle';
-import SortButtons from  './SortButtons';
+import SortButtons from './SortButtons';
 import Line from './Line';
 import InputSearch from './InputSearch';
 import { searchProducts, sortProducts } from '../../actions/actions-products';
 
 /* Styles */
-import './SideBar.scss'; 
+import './SideBar.scss';
 
 class SideBar extends Component {
     componentDidMount() {
@@ -35,7 +35,7 @@ class SideBar extends Component {
     }
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         visibleProducts: store.productsReducer.visibleProducts,
     }
