@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Image = props => (
-    <img 
-        className='product-photo' 
-        src={props.imageUrl} 
-        alt='product-photo' 
+    <img
+        className='product-photo'
+        src={props.imageUrl}
+        alt='product-photo'
     />
 )
 

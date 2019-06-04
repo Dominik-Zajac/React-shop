@@ -1,4 +1,4 @@
-import  React, { Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToBasket } from '../../actions/actions-basket';
 import Image from './ProductBoxImage';
@@ -18,16 +18,16 @@ class ProductBox extends Component {
 
     render() {
         const {
-            id, 
-            name, 
-            count, 
-            price, 
+            id,
+            name,
+            count,
+            price,
             imageUrl,
             inMagazine,
-            description 
+            description
         } = this.props.product;
 
-        return (    
+        return (
             <ReactCSSTransitionGroup
                 transitionName='fade'
                 transitionEnterTimeout={1500}
@@ -36,18 +36,18 @@ class ProductBox extends Component {
                 transitionAppearTimeout={1500}
             >
                 <div className='product-box'>
-                    <Image 
-                        imageUrl={imageUrl} 
+                    <Image
+                        imageUrl={imageUrl}
                     />
-                    <InfoBox 
-                        name={name} 
-                        description={description} 
+                    <InfoBox
+                        name={name}
+                        description={description}
                     />
-                    <InfoColumn 
-                        id={id} 
+                    <InfoColumn
+                        id={id}
                         price={price}
                         inMagazine={inMagazine}
-                        count={count} 
+                        count={count}
                         click={this.handleClickAddToBasket.bind(this)}
                     />
                 </div>
@@ -56,7 +56,7 @@ class ProductBox extends Component {
     }
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         cart: store.productsReducer.cart,
         counter: store.productsReducer.pieceCounter
