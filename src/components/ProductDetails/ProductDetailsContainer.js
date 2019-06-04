@@ -32,7 +32,7 @@ class ProductDetailsContainer extends Component {
             modal: !prevState.modal
         }));
     }
-    
+
     handleClickAddToBasket(id) {
         this.props.dispatch(addToBasket(id));
         this.setState({
@@ -42,24 +42,24 @@ class ProductDetailsContainer extends Component {
 
     render() {
         const {
-            id, 
-            name, 
-            power, 
+            id,
+            name,
+            power,
             model,
-            count, 
-            price, 
-            voltage, 
-            imageUrl, 
-            producent, 
-            condition, 
-            inMagazine 
+            count,
+            price,
+            voltage,
+            imageUrl,
+            producent,
+            condition,
+            inMagazine
         } = this.props.selectedProduct;
-        
-        return(
+
+        return (
             <div className='product-wrapper'>
                 <div className='product-container row'>
-                    <ImageBox 
-                        imageUrl={imageUrl} 
+                    <ImageBox
+                        imageUrl={imageUrl}
                         name={name}
                         toggle={this.toggle}
                         modal={this.state.modal}
@@ -67,26 +67,26 @@ class ProductDetailsContainer extends Component {
                     <div className='product-info col-sm-12 col-lg-6'>
                         <TitleProduct name={name} />
                         <Price price={price} />
-                        <BuyButton 
+                        <BuyButton
                             clickBuy={this.handleClickAddToBasket.bind(this, id)}
                             count={count}
                             inMagazine={inMagazine}
                         />
                     </div>
                 </div>
-                <MoreInfo 
-                    producent={producent} 
-                    model={model} 
-                    voltage={voltage} 
-                    power={power} 
-                    condition={condition} 
+                <MoreInfo
+                    producent={producent}
+                    model={model}
+                    voltage={voltage}
+                    power={power}
+                    condition={condition}
                 />
             </div>
         )
     }
 }
 
-const mapStateToProps = function(store) {
+const mapStateToProps = function (store) {
     return {
         selectedProduct: store.productsReducer.selectedProduct
     }

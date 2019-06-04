@@ -2,10 +2,10 @@ import React from 'react';
 
 const MoreInfo = props => {
     const {
-        producent, 
-        model, 
-        voltage, 
-        power, 
+        producent,
+        model,
+        voltage,
+        power,
         condition
     } = props;
 
@@ -15,31 +15,31 @@ const MoreInfo = props => {
                 Wiecej informacji
             </p>
             <p className='first-word'>
-                Producent:  
+                Producent:
                 <span className='second-word'>
                     {producent}
                 </span>
             </p>
             <p className='first-word'>
-                Model:  
+                Model:
                 <span className='second-word'>
                     {model}
                 </span>
             </p>
             <p className='first-word'>
-                Napiecie:  
+                Napiecie:
                 <span className='second-word'>
                     {voltage}
                 </span>
             </p>
             <p className='first-word'>
-                Moc:  
+                Moc:
                 <span className='second-word'>
                     {power}
                 </span>
             </p>
             <p className='first-word'>
-                Stan:  
+                Stan:
                 <span className='second-word'>
                     {condition}
                 </span>
