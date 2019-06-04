@@ -11,7 +11,7 @@ class ProductList extends Component {
         super(props);
 
         this.state = {
-            currentPage : 0,
+            currentPage: 0,
         }
     }
 
@@ -24,7 +24,7 @@ class ProductList extends Component {
     }
 
     render() {
-        const {currentPage} = this.state;
+        const { currentPage } = this.state;
         const pageSize = 3;
         const pageCount = Math.ceil(this.props.products.length / pageSize);
 
@@ -33,22 +33,22 @@ class ProductList extends Component {
                 {this.props.products.slice(
                     currentPage * pageSize,
                     (currentPage + 1) * pageSize
-                ).map(product  => 
+                ).map(product =>
                     <div key={product.id}>
                         <Link className='navbar-brand' to={'products/product/' + product.id}>
-                            <ProductBox product={product}/>
+                            <ProductBox product={product} />
                         </Link>
                     </div>
                 )}
-                <PageNumbering 
-                    pageSize={pageSize} 
-                    pageCount={pageCount} 
-                    currentPage={currentPage} 
-                    click={this.handleClick.bind(this)} 
+                <PageNumbering
+                    pageSize={pageSize}
+                    pageCount={pageCount}
+                    currentPage={currentPage}
+                    click={this.handleClick.bind(this)}
                 />
             </div>
         )
     }
-} 
+}
 
 export default ProductList;

@@ -1,13 +1,13 @@
 import React from 'react';
-import { 
-    Pagination, 
-    PaginationItem, 
-    PaginationLink 
+import {
+    Pagination,
+    PaginationItem,
+    PaginationLink
 } from 'reactstrap';
 
 const PageNumbering = props => {
-    const {currentPage, pageCount, pageSize, click} = props;
-    
+    const { currentPage, pageCount, click } = props;
+
     return (
         <div className='pagination'>
             <Pagination>
@@ -17,9 +17,9 @@ const PageNumbering = props => {
                         previous
                     />
                 </PaginationItem>
-                {[...Array(pageCount)].map((page, index) => 
-                    <PaginationItem 
-                        active={index === currentPage} 
+                {[...Array(pageCount)].map((page, index) =>
+                    <PaginationItem
+                        active={index === currentPage}
                         key={index}
                     >
                         <PaginationLink onClick={e => click(e, index)}>
@@ -27,12 +27,12 @@ const PageNumbering = props => {
                         </PaginationLink>
                     </PaginationItem>
                 )}
-                <PaginationItem disabled={currentPage >= pageCount - 1}>  
+                <PaginationItem disabled={currentPage >= pageCount - 1}>
                     <PaginationLink
                         onClick={e => click(e, currentPage + 1)}
-                        next    
-                    />  
-                </PaginationItem> 
+                        next
+                    />
+                </PaginationItem>
             </Pagination>
         </div>
     )

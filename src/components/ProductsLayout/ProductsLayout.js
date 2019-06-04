@@ -21,11 +21,11 @@ const ProductsLayout = props => {
                     <SideBar />
                 </div>
                 <div className='col-sm-6'>
-                    <ProductsList products={props.products}/>
+                    <ProductsList products={props.products} />
                 </div>
             </div>
         </ReactCSSTransitionGroup>
-    ) 
+    )
 }
 
 export default ProductsLayout;

@@ -1,20 +1,20 @@
 .products-list {
     display: flex;
     flex-direction: column;
-    
+
     min-height: 80vh;
 
     .pagination {
         display: flex;
         justify-content: center;
-        
+
         margin-top: 2%;
 
         .page-link {
             color: #ffa502;
             border-color: #ffa502;
             background-color: #fafafa;
-            
+
             &:hover {
                 color: #fff;
                 border-color: #ffa502;
@@ -22,7 +22,7 @@
             }
 
             &:focus {
-                box-shadow: 0 0 0 0.2rem rgba(255,165,2,.25);
+                box-shadow: 0 0 0 0.2rem rgba(255, 165, 2, .25);
             }
         }
 
