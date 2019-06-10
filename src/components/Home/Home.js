@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-    Container,
-    CarouselItem,
-} from 'reactstrap';
+import { CarouselItem, } from 'reactstrap';
 import Title from './Title';
 import Info from './ShopInfo';
 import CarouselContainer from './CarouselContainer';

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProductsList from '../ProductsList/ProductsList';
 import SideBar from '../SideBar/SideBar';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
